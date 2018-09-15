@@ -1,7 +1,7 @@
 {
-  "name": "commit-colors",
+  "name": "@sparkbox/commit-colors",
   "version": "1.0.0",
-  "description": "Displays the hexadecimal color for your git commit SHA, every time you author a commit.",
+  "description": "See a lovely color swatch in your terminal every time you author a commit. The hexadecimal color comes from the first six characters in your commit hash.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
