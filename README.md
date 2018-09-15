@@ -2,7 +2,7 @@
 
 See a lovely color swatch in your terminal every time you author a commit. Here's what it looks like:
 
-![animated gif demonstrating commit colors](demo.gif)
+![animated gif demonstrating commit colors](https://raw.githubusercontent.com/sparkbox/commit-colors/master/demo.gif)
 
 The hexadecimal color comes from the first six characters in your commit hash.
 
