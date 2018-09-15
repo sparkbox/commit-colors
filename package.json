@@ -1,0 +1,18 @@
+{
+  "name": "commit-colors",
+  "version": "1.0.0",
+  "description": "Displays the hexadecimal color for your git commit SHA, every time you author a commit.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bryan Braun <bryan@heysparkbox.com>",
+  "license": "MIT",
+  "bin": {
+    "commit-colors": "./index.js"
+  },
+  "dependencies": {
+    "chalk": "2.4.1",
+    "color-namer": "1.3.0"
+  }
+}
