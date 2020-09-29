@@ -6,46 +6,21 @@ See a lovely color swatch in your terminal every time you author a commit. Here'
 
 The hexadecimal color comes from the first six characters in your commit hash.
 
+*Note: commit-colors 1.0.0 was written in JavaScript and [distributed on npm](https://www.npmjs.com/package/@sparkbox/commit-colors). For instructions on that version of the project, see [the v1 README](https://github.com/sparkbox/commit-colors/tree/76a6b46fed76aeb5e1c813d86ead5185ee1e5cc1).*
+
 ## Installing
 
-1. Install the package globally
-
-    ```bash
-    npm install -g @sparkbox/commit-colors
-    ```
-
+1. Install the package globally (instructions TBD)
 2. Copy/paste the following text into a post-commit hook:
 
     ```
     #!/bin/bash
-    SHA=$(git rev-parse HEAD)
-    SHA6=${SHA:0:6}
-    commit-colors $SHA6
+    commit-colors $(git rev-parse HEAD)
     ```
 
     In other words, put the above code in a file named `post-commit` at the location `.git/hooks/post-commit` in your git project of choice. [Make sure this file is executable](https://stackoverflow.com/a/14208849/1154642). If you want this hook to run an all your repos, [see how to do that here](https://stackoverflow.com/q/2293498/1154642).
 
-## Options
-
-You can change the appearance of the message by using a different template, like the "single line" template below:
-
-![a screenshot of the message using the "single line" template](https://raw.githubusercontent.com/sparkbox/commit-colors/master/single-line.png)
-
-To use a different template, pass the template path as the second argument to `commit-colors` in your shell script:
-
-```bash
-commit-colors $SHA6 './templates/single-line'
-```
-
-This could also be a path to your own custom template.
-
-```bash
-commit-colors $SHA6 '~/my-stuff/my-color-template'
-```
-
 ## Todo
 
 - Make it easier to install the commit hook.
-- Ensure it is cross-platform.
-- Support more color names.
 - ???
