@@ -9,3 +9,5 @@ build:
 	@go build -o ./build/main ./cmd
 	@echo "[OK] 'main' binary was created!"
 
+test:
+	@go test ./cmd/...

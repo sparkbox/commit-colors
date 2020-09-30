@@ -22,7 +22,6 @@ func GetColorName(myHexColorCode string) string {
 		fmt.Println("error:", err)
 	}
 
-	// We use the LAB color space to find the closest color based on human perceptions.
 	myHashedHexColorCode := fmt.Sprintf("#%s", myHexColorCode)
 	myReferenceColor, err := colorful.Hex(myHashedHexColorCode)
 
@@ -48,6 +47,7 @@ func GetColorName(myHexColorCode string) string {
 			fmt.Println("error:", err)
 		}
 
+		// We use the LAB color space to find the closest color based on human perceptions.
 		currentColorDistance := myReferenceColor.DistanceLab(currentColor)
 
 		if currentColorDistance < closestColorDistance {
