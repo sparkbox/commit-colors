@@ -1,0 +1,40 @@
+# For details on this, see the docs at http://goreleaser.com
+before:
+  hooks:
+    - go mod download
+    - go generate ./...
+builds:
+  - dir: cmd
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - windows
+      - darwin
+archives:
+  - replacements:
+      darwin: Darwin
+      linux: Linux
+      windows: Windows
+      386: i386
+      amd64: x86_64
+checksum:
+  name_template: 'checksums.txt'
+snapshot:
+  name_template: "{{ .Tag }}-next"
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - '^docs:'
+      - '^test:'
+# Automatically publishes to sparkbox/homebrew-commit-colors
+# See more details here: https://goreleaser.com/customization/homebrew/
+brews:
+  - tap:
+      owner: sparkbox
+      name: homebrew-commit-colors
+    dependencies:
+    homepage: "https://github.com/sparkbox/commit-colors"
+    description: "See a lovely color swatch in your terminal every time you author a commit."
+

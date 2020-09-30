@@ -1,4 +1,10 @@
-node_modules
 .vscode
+
+# Built output of go generate
 all-colors.go
+
+# Builds for local devlopment
 build
+
+# Folder for publishing binaries
+dist
