@@ -10,17 +10,27 @@ The hexadecimal color comes from the first six characters in your commit hash.
 
 ## Installing
 
-1. Install the package globally (instructions TBD)
-2. Copy/paste the following text into a post-commit hook:
+1. Install the package with homebrew:
 
+    ```bash
+    brew tap sparkbox/commit-colors
+    brew install commit-colors
     ```
+
+2. Set up a post-commit hook. Options include:
+
+    **The manual way**
+
+    Copy/paste the following text into a post-commit hook:
+
+    ```bash
     #!/bin/bash
     commit-colors $(git rev-parse HEAD)
     ```
 
-    In other words, put the above code in a file named `post-commit` at the location `.git/hooks/post-commit` in your git project of choice. [Make sure this file is executable](https://stackoverflow.com/a/14208849/1154642). If you want this hook to run an all your repos, [see how to do that here](https://stackoverflow.com/q/2293498/1154642).
+    In other words, put the above code in a file named `post-commit` at the location `.git/hooks/post-commit` in your git project of choice. [Make sure this file is executable](https://stackoverflow.com/a/14208849/1154642). If you want this hook to run on all your repos, [see how to do that here](https://stackoverflow.com/q/2293498/1154642).
 
-## Todo
+    **Using a Git Hooks manager**
 
-- Make it easier to install the commit hook.
-- ???
+    See [this list of tools for managing git hooks](https://github.com/aitemr/awesome-git-hooks#tools).
+
