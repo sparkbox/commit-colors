@@ -35,7 +35,6 @@ func GetColorName(myHexColorCode string) string {
 	for i := range colorData {
 		// Exit early if there's an exact hex code match.
 		if colorData[i].Hex == myHashedHexColorCode {
-			fmt.Println("Exact match for index:", i)
 			closestColorIndex = i
 			break
 		}
