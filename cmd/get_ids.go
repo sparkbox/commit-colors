@@ -8,15 +8,15 @@ import (
 )
 
 // GetCommitIDFromArgs returns the first CLI argument and exits gracefully if it's missing
-func GetCommitIDFromArgs() string {
+func GetCommitIDFromArgs(args []string) string {
 	// Note: os.Args[] always contains at least one value (the path to the program).
 	// Any additional values that exist are the arguments passed to the program.
-	if len(os.Args) == 1 {
+	if len(args) == 1 {
 		fmt.Println("commit-colors expects you to provide your commit ID as an argument")
 		os.Exit(3)
 	}
 
-	return os.Args[1]
+	return args[1]
 }
 
 // GetHexIDFromCommitID checks an input string and truncates, if necessary, to return a valid HexID

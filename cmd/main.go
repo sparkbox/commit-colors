@@ -9,7 +9,7 @@ import (
 //go:generate go run gen.go
 
 func main() {
-	myHexID, err := GetHexIDFromCommitID(GetCommitIDFromArgs())
+	myHexID, err := GetHexIDFromCommitID(GetCommitIDFromArgs(os.Args))
 
 	if err != nil {
 		fmt.Println(err)

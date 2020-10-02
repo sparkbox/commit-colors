@@ -1,4 +1,4 @@
-# Commit Colors
+# Commit Colors [![Test Status](https://github.com/sparkbox/commit-colors/workflows/Tests/badge.svg)](https://github.com/sparkbox/commit-colors/actions?workflow=Tests)
 
 See a lovely color swatch in your terminal every time you author a commit. The hexadecimal color comes from the first six characters in your commit ID. Here's what it looks like:
 
@@ -10,16 +10,18 @@ Commit colors is written in Go, and is usable on Mac, Windows, and Linux.
 
 ## Installation
 
-**Using Homebrew**
+**Via Homebrew**
 
 ```bash
 brew install sparkbox/commit-colors/commit-colors
 ```
 
-**Direct Download**
+**Via Direct Download**
 
 1. Browse to [the list of releases](https://github.com/sparkbox/commit-colors/releases), and download the package that corresponds to your system (Mac, Windows or Linux).
 2. Move the executable to a location on [your PATH](https://superuser.com/a/284351/193516) ([like `/usr/local/bin`](https://superuser.com/q/7150/193516), for example).
+
+<div align="center">· · ·</div></br>
 
 Once installed, you can do a quick test in the terminal:
 
@@ -58,7 +60,7 @@ git push origin 2.0.0
 ```
 
 2. The Github Action handles the rest!
-- The action publishes [a Github release](https://github.com/sparkbox/commit-colors/releases) and a [homebrew update](https://github.com/sparkbox/homebrew-commit-colors).
-- Additional publishing settings can be found in `goreleaser.yml`
+  - The action publishes [a Github release](https://github.com/sparkbox/commit-colors/releases) and a [homebrew update](https://github.com/sparkbox/homebrew-commit-colors).
+  - Additional publishing settings can be found in `goreleaser.yml`
 
 
