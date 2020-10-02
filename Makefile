@@ -10,4 +10,5 @@ build:
 	@echo "[OK] 'main' binary was created!"
 
 test:
+	@go generate ./cmd/main.go
 	@go test ./cmd/...
