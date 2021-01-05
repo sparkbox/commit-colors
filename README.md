@@ -6,14 +6,15 @@ See a lovely color swatch in your terminal every time you author a commit. The h
 
 Commit colors is written in Go, and is usable on Mac, Windows, and Linux.
 
-*Note: commit-colors 1.0.0 was written in JavaScript and [distributed on npm](https://www.npmjs.com/package/@sparkbox/commit-colors). For instructions on that version of the project, see [the v1 README](https://github.com/sparkbox/commit-colors/tree/76a6b46fed76aeb5e1c813d86ead5185ee1e5cc1).*
+*Note: this readme contains instructions for commit-colors 2.0+. commit-colors 1.0 was written in JavaScript and [distributed on npm](https://www.npmjs.com/package/@sparkbox/commit-colors). For instructions on that version of the project, see [the v1 README](https://github.com/sparkbox/commit-colors/tree/76a6b46fed76aeb5e1c813d86ead5185ee1e5cc1).*
 
 ## Installation
 
 **Via Homebrew**
 
 ```bash
-brew install sparkbox/commit-colors/commit-colors
+brew tap sparkbox/commit-colors
+brew install commit-colors
 ```
 
 **Via Direct Download**
