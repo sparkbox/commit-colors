@@ -4,6 +4,8 @@ See a lovely color swatch in your terminal every time you author a commit. The h
 
 ![animated gif demonstrating commit colors](https://raw.githubusercontent.com/sparkbox/commit-colors/master/demo.gif)
 
+**For a live demo and some background on the project, [watch this 5-minute lunch-and-learn video](https://www.youtube.com/watch?v=thEIw-sxfZM).**
+
 Commit colors is written in Go, and is usable on Mac, Windows, and Linux.
 
 *Note: this readme contains instructions for commit-colors 2.0+. commit-colors 1.0 was written in JavaScript and [distributed on npm](https://www.npmjs.com/package/@sparkbox/commit-colors). For instructions on that version of the project, see [the v1 README](https://github.com/sparkbox/commit-colors/tree/76a6b46fed76aeb5e1c813d86ead5185ee1e5cc1).*
